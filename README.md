@@ -155,3 +155,59 @@ void loop() {
   Blynk.run();  // Run Blynk connection
   timer.run();  // Run timer to send data periodically
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Style Sign-In</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <video class="video-bg" autoplay loop muted playsinline>
+        <source src="My CHannel (1).mp4" type="video/mp4">
+    </video>
+    
+    <div class="signin-container">
+        <div class="signin-box">
+            <button type="submit" class="signin-button facebook" onclick="window.location.href='mainhomepage.htm'">
+                <i class="fa-brands fa-facebook"></i>
+                Visit our website
+            </button>
+            <div class="options">
+                <button type="submit" class="signin-buttonguest" onclick="window.location.href='createaccount.htm'">
+                    <i class="fa-solid fa-user"></i>
+                    Guest
+                </button>
+                <button type="submit" class="signin-buttonemail" onclick="window.location.href='emaillogin.htm'">
+                    <i class="fa-solid fa-envelope"></i>
+                    Email
+                </button>
+            </div>
+            <div class="terms">
+                <label><input type="checkbox"> I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</label>
+                <label><input type="checkbox"> I am over the age of majority or have my guardian’s approval.</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
